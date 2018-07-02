@@ -1,0 +1,6 @@
+<h1>welcome to dark party art rock</h1>
+
+<% @artists.each do |a| %>
+  <h3><%= link_to a.name, artist_path(a) %></h3>
+  <p><%= pluralize(a.song_count, 'song') %></p>
+<% end %>
